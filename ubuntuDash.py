@@ -36,7 +36,7 @@ while True:
         headers = {'Content-Type': 'application/json'}
 
         response = urequests.post(SERVER_URL, data=data, headers=headers)
-        print("Response:", response.text)
+        print("Data terkirim : ", "suhu:",suhu,"kelembapan:",kelembapan,"gerakan:",gerakan)
         response.close()
 
     except Exception as e:
